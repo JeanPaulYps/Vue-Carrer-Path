@@ -435,6 +435,10 @@
 - [Vue.js: De cero a experto](https://www.udemy.com/course/vuejs-fh/)
 
 ## Documentación
+- [HTML Reference](https://htmlreference.io/)
+- [CSS Reference](https://cssreference.io/)
+- [JavasCript info](https://es.javascript.info/)
+- [Documentacion oficial Vue](https://v3.vuejs.org/guide/introduction.html)
 - [Documentación Vue Testing](https://testing-library.com/docs/vue-testing-library/intro)
 
 
