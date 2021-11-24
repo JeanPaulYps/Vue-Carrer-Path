@@ -92,12 +92,12 @@
    <summary> JavaScript</summary>
    <ul>
         <li>Asincronismo</li>
-        <li>`this`</li>
+        <li><code>this</code></li>
         <li>Strict mode</li>
         <details>
             <summary>Peticiones HTTP</summary>
             <ul>
-                <li>`fetch`</li>
+                <li><code>fetch</code></li>
                 <li>Axios</li>
                 <li>Metodos HTTP</li>
             </ul>
@@ -121,30 +121,30 @@
         <details>
             <summary>Ciclo de vida componentes</summary>
             <ul>
-                <li> `createApp` </li>
-                <li> `beforeCreate` </li>
-                <li> `created` </li>
-                <li> `compile template` </li>
-                <li> `beforeMount` </li>
-                <li> `mounted` </li>
-                <li> `beforeUpdate` </li>
-                <li> `updated` </li>
-                <li> `beforeUnmont` </li>
-                <li> `unmonted` </li>
+                <li> <code>createApp</code> </li>
+                <li> <code>beforeCreate</code> </li>
+                <li> <code>created</code> </li>
+                <li> <code>compile template</code> </li>
+                <li> <code>beforeMount</code> </li>
+                <li> <code>mounted</code> </li>
+                <li> <code>beforeUpdate</code> </li>
+                <li> <code>updated</code> </li>
+                <li> <code>beforeUnmont</code> </li>
+                <li> <code>unmonted</code> </li>
             </ul>
         </details>
          <details>
             <summary>Inicializar una aplicación</summary>
             <ul>
-                <li> `vue.createApp()` </li>
-                <li> `app.mount()` </li>
+                <li> <code>vue.createApp()</code> </li>
+                <li> <code>app.mount()</code> </li>
             </ul>
         </details>
         <details>
             <summary>Lenguaje de template</summary>
 			<ul>
-                <li> Operador de interpolación `{{ }}` </li>
-                <li> `v-once()` </li>
+                <li> Operador de interpolación <code>{{ }}</code> </li>
+                <li> <code>v-once()</code> </li>
         	</ul>
         </details>
         <details>
@@ -154,36 +154,39 @@
                 <li> Nombre </li>
                 <li> Modificador </li>
                 <li> Valor </li>
-                ```jsx
-                v-on:click.stop="doThis"
-                //directiva:nombre.modificador="valor"
-                ```
+                <details>
+                    <summary>Directivas de vue</summary>
+                        <code style="white-space:nowrap;">
+                        v-on:click.stop="doThis"
+                         //directiva:nombre.modificador="valor"
+                        </code>
+                </details>
         	</ul>
         </details>
         <details>
             <summary>Usar JS dentro de HTML</summary>
 			<ul>
-                <li> `vbind` o el atajo `:` </li>
+                <li> <code>vbind</code> o el atajo <code>:</code> </li>
         	</ul>
 		</details>
         <details>
             <summary>Escuchar eventos</summary>
 			<ul>
-                <li> `on` o el atajo `@` </li>
+                <li><code>on</code> o el atajo <code>@</code> </li>
         	</ul>
 		</details>
         <details>
             <summary>Ciclos y condicionales en componentes</summary>
 			<ul>
-                <li> `v-if` `v-else` </li>
-                <li> `v-for` </li>
+                <li> <code>v-if</code> <code>v-else</code> </li>
+                <li> <code>v-for</code> </li>
         	</ul>
 		</details>
         <details>
             <summary>Formularios controlados</summary>
             <ul> 
                 <details>
-                    <summary>`v-model`</summary>
+                    <summary><code>v-model</code></summary>
                     <ul>    
                         <li> Numeros </li>
                         <li> Dropdowns </li>
@@ -196,59 +199,64 @@
          <details>
             <summary>Crear componentes con options API</summary>
 			<ul>
-                <li> `methods()` </li>
-                <li> `data()` </li>
-                <li> `computed()` </li>
-                <li> `watchers()` </li>
+                <li> <code>methods()</code> </li>
+                <li> <code>data()</code> </li>
+                <li> <code>computed()</code> </li>
+                <li> <code>watchers()</code> </li>
         	</ul>
 		</details>
         <details>
             <summary>Estilos dinamicos</summary>
 			<ul>
-                <li>`:style`</li>
+                <li><code>:style</code></li>
         	</ul>
 		</details>
         <details>
             <summary>Vue-CLI</summary>
 			<ul>
-                <li> Archivos `.vue` </li>
+                <li> Archivos <code>.vue</code> </li>
                 <li> Comandos Vue </li>
         	</ul>
 		</details>
         <details>
             <summary>Comunicar componentes padres-hijos</summary>
             <ul>
-                <li> `props: [ ]` </li>
+                <li> <code>props: [ ]</code> </li>
                 <details>
                     <summary>Validacion de props</summary>
                     <ul>
-                        <li> `type` `required` `default` `validator()` </li>
+                        <li> 
+                            <code>type</code> 
+                            <code>required</code> 
+                            <code>default</code> 
+                            <code>validator()</code> 
+                        </li>
                 	</ul>
 		        </details>
                 <details>
                     <summary>Eventos personalizados en componentes</summary>
 			        <ul>
-                        <li> `this.$emit()` </li>
-                        <li> `emits: [ ]` </li>
+                        <li> <code>this.$emit()</code> </li>
+                        <li> <code>emits: [ ]</code> </li>
                         <li> El padre reacciona ante el evento transmitido por los componentes hijos </li>
                 	</ul>
 		        </details>
                 <details>
                     <summary>Pasar props a componentes que esten por debajo de los hijos</summary>
                     <ul>
-                                <li> `provide()` para componentes padre </li>
-                                <li> `inject()`  para componentes hijo </li>
+                                <li> <code>provide()</code> para componentes padre </li>
+                                <li> <code>inject()</code>  para componentes hijo </li>
                             </ul>
                 </details>
                 <details>
                     <summary>Acceder al contenido envuelto dentro de un componente</summary>
                     <ul>
-                        <li> `<slot>` </li>
-                        <li> `<v-slot>` para slots con nombre </li>
+                        <li> <code><slot></code> </li>
+                        <li> <code><v-slot></code> para slots con nombre </li>
                         <details>
                             <ul>
                             <summary>Scoped slots</summary>
-                                <li> `v-slot="propName"` </li>
+                                <li> <code>v-slot="propName"</code> </li>
                             </ul>
                         </details>
                     </ul>
@@ -258,19 +266,19 @@
         <details>
             <summary>Renderizar componentes en otra etiqueta fuera del flujo normal</summary>
             <ul>
-            <li> `<telport>` </li>
+            <li><code>telport</code></li>
             <details>
                 <summary>Alcances de los componentes</summary>
                 <details>
                     <summary>Alcance global</summary>
                     <ul>
-                        <li> `app.component()` </li>
+                        <li> <code>app.component()</code> </li>
                     </ul>
                 </details>
                 <details>
                     <summary>Alcance local</summary>
                     <ul>
-                        <li> `components: { }` </li>
+                        <li> <code>components: { }</code> </li>
                     </ul>
                 </details>
             </details>
@@ -285,31 +293,31 @@
                 <details>
                     <summary>Vue-router</summary>
                     <ul>
-                        <li> Crear el router `createRouter()` </li>
-                        <li> Registrar rutas `routes: [ ]` </li>
-                        <li> Crear enlaces `<router-link>` </li>
+                        <li> Crear el router <code>createRouter()</code> </li>
+                        <li> Registrar rutas <code>routes: [ ]</code> </li>
+                        <li> Crear enlaces <code>router-link</code> </li>
                         <details>
-                            <summary>Agregar parametros `/ruta/:parametro/`</summary>
+                            <summary>Agregar parametros <code>/ruta/:parametro/</code></summary>
 			                <ul>
-                                <li> Acceder a los parametros `this.$route.params.parametro` </li>
+                                <li> Acceder a los parametros <code>this.$route.params.parametro</code> </li>
                         	</ul>
 		                </details>
                         <details>
                             <summary>Navegación con código</summary>
 			                <ul>
-                                <li> `$router.push()` </li>
-                                <li> `$router.forward()` </li>
-                                <li> `$router.back()` </li>
+                                <li> <code>$router.push()</code> </li>
+                                <li> <code>$router.forward()</code> </li>
+                                <li> <code>$router.back()</code> </li>
                         	</ul>
 		                </details>
                         <details>
                             <summary>Navigation guards</summary>
 			                <ul>
-                                <li> `beforeEach` </li>
-                                <li> `beforeEnter` </li>
-                                <li> `beforeRouteEnter` </li>
-                                <li> `beforeRouterLeave` </li>
-                                <li> `afterEach` </li>
+                                <li> <code>beforeEach</code> </li>
+                                <li> <code>beforeEnter</code> </li>
+                                <li> <code>beforeRouteEnter</code> </li>
+                                <li> <code>beforeRouterLeave</code> </li>
+                                <li> <code>afterEach</code> </li>
                         	</ul>
 		                </details>
                     </ul>
@@ -322,20 +330,20 @@
             <details>
                 <summary>VueX</summary>
 			    <ul>
-                    <li> Inicializar manejador de estado `createStore()` </li>
-                    <li> Guardar datos `state()` </li>
-                    <li> Acceder a los datos `getters` </li>
+                    <li> Inicializar manejador de estado <code>createStore()</code> </li>
+                    <li> Guardar datos <code>state()</code> </li>
+                    <li> Acceder a los datos <code>getters</code> </li>
                 <details>
-                    <summary>Cambiar los datos `mutations`</summary>
+                    <summary>Cambiar los datos <code>mutations</code></summary>
                     <ul>
                         <li> Payload </li>
-                        <li> Para ejecutar cambios en los datos `commit()` </li>
+                        <li> Para ejecutar cambios en los datos <code>commit()</code> </li>
                 	</ul>
 		        </details>
-                <li> Ejecutar código asincrono `actions` </li>
-                <li> `mapActions()` `mapGetters()` para acceder a las acciones y datos guardados </li>
+                <li> Ejecutar código asincrono <code>actions</code> </li>
+                <li> <code>mapActions()</code> <code>mapGetters()</code> para acceder a las acciones y datos guardados </li>
                 <details>
-                    <summary>Encapsular con modulos `modules`</summary>
+                    <summary>Encapsular con modulos <code>modules</code></summary>
 			        <ul>
                         <li> Leer los datos desde modulos </li>
                 	</ul>
@@ -347,28 +355,28 @@
         <details>
             <summary>Re-utilizar lógica</summary>
 			<ul>
-                <li> `mixins: []` </li>
+                <li> <code>mixins: []</code> </li>
                 <li> hooks </li>
         	</ul>
 		</details>
         <details>
-            <summary>Composition API `setup()`</summary>
+            <summary>Composition API <code>setup()</code></summary>
             <ul>
                 <details>
                     <summary>Variables que reacciona a los cambios</summary>
                     <ul>
-                        <li> `ref()` para datos primitivos y nodos HTML </li>
-                        <li> `reactive()` para objetos </li>
+                        <li> <code>ref()</code> para datos primitivos y nodos HTML </li>
+                        <li> <code>reactive()</code> para objetos </li>
                     </ul>
                 </details>
-                <li> `functions()` para reemplazar `methods` </li>
-                <li> `computed()` para reemplazar `computed` </li>
+                <li> <code>functions()</code> para reemplazar <code>methods</code> </li>
+                <li> <code>computed()</code> para reemplazar <code>computed</code> </li>
                 <li> Exponer variables </li>
                 <details>
                     <summary>Para componentes</summary>
                     <ul>
-                        <li> `props`  `context` parametros de `setup()` </li>
-                        <li> `provide()` `inject()` como funciones de Vue para usar esos conceptos </li>
+                        <li> <code>props</code>  <code>context</code> parametros de <code>setup()</code> </li>
+                        <li> <code>provide()</code> <code>inject()</code> como funciones de Vue para usar esos conceptos </li>
                     </ul>
                 </details>
                 <details>
@@ -377,8 +385,8 @@
                         <details>
                             <summary>Usando los hooks diseñados para ello</summary>
                             <ul>
-                                <li> `useRouter()` </li>
-                                <li> `useStore()` </li>
+                                <li> <code>useRouter()</code> </li>
+                                <li> <code>useStore()</code> </li>
                             </ul>
                         </details>
                     </ul>
